@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            width: 93vw;
+            padding: 30px 30px 0px 30px;
+            grid-gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+        }
+        .nav{
+            display: flex;
+            width: 93vw;
+            height: 3rem;
+            padding: 30px 30px 0px 30px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-content: center;
+            #left{
+                align-items: center;
+                height: 100%;
+                display: flex;
+                gap: 3rem;
+            }
+        }
+        #logo{
+            font-weight: 600;
+            font-size: x-large;
+        }
+        .links{
+            font-size: 1em;
+            opacity: .6;
+            transition: all 1s ease-in-out;
+            position: relative;
+        }
+        .links:after {
+            content: "";
+            position: absolute;  
+            width: 0;   
+            height: 2px;  
+            bottom: 0; 
+            left: 0px;    
+            opacity: .87; 
+            background-color: #000; 
+            transition: width 0.3s ease-in-out; 
+        }
+
+        .links:hover:after {
+            width: 100%; 
+        }
+
+        .menu{
+            height: 20px;
+            width: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+        .menu:hover{
+            transform: scale(1.2);
+        }
+
+        .card{
+            text-wrap: pretty;
+            box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.152);
+            border-radius: 5px;
+            .image{
+                height: 8em;
+                width: 100%;
+                background-image:url("./assets/itachi-uchiha-profile-red-moon-sticker.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: black;
+                border-radius: 5px 5px 0px 0px;
+            }
+            .content{
+                transition: height 1s ease-in-out;
+                padding: 0px 20px 20px 20px;
+                hr{
+                    opacity: 0.4;
+                }
+                #red{
+                    color: rgba(255, 0, 0, 0.353);
+                }
+                #light{
+                    opacity: .5;
+                }
+            }
+        }
+      
+        .icons{
+            display:flex ;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .footer{
+            height: 15vh;
+            width: 93vw;
+            background-color: black;
+            padding: 30px;
+            margin: 20px 0px 0px 0px;
+            display: flex;
+            flex-direction: row;
+            color: white;
+            justify-content: space-around;
+        }
+        #search{
+            width: 120px;
+            height:25px;
+            background-color: aliceblue;
+            #box{
+                width: 30px;
+                height: 100%;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div id="left">
+            <p id="logo">Deck.</p>
+            <p class="links">links</p>
+            <p class="links">links</p>
+            <p class="links">links</p>
+            <p class="links">links</p>
+        </div>
+        <div class="menu">
+            <hr>
+            <hr>
+            <hr>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="image">
+            </div>
+            <div class="content">
+                <p id="red">Lorem ipsum dolor sit amet consectetur </p>
+                <h3>Lorem ipsum</h3>
+                <p id="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, blanditiis fuga. Asperiores voluptate maiores architecto, </p>
+                <hr>
+                <div class="icons">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+            </div>
+            <div class="content">
+                <p id="red">Lorem ipsum dolor sit amet consectetur </p>
+                <h3>Lorem ipsum</h3>
+                <p id="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, blanditiis fuga. Asperiores voluptate maiores architecto, </p>
+                <hr>
+                <div class="icons">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+            </div>
+            <div class="content">
+                <p id="red">Lorem ipsum dolor sit amet consectetur </p>
+                <h3>Lorem ipsum</h3>
+                <p id="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, blanditiis fuga. Asperiores voluptate maiores architecto, </p>
+                <hr>
+                <div class="icons">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+            </div>
+            <div class="content">
+                <p id="red">Lorem ipsum dolor sit amet consectetur </p>
+                <h3>Lorem ipsum</h3>
+                <p id="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, blanditiis fuga. Asperiores voluptate maiores architecto, </p>
+                <hr>
+                <div class="icons">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+            </div>
+            <div class="content">
+                <p id="red">Lorem ipsum dolor sit amet consectetur </p>
+                <h3>Lorem ipsum</h3>
+                <p id="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, blanditiis fuga. Asperiores voluptate maiores architecto, </p>
+                <hr>
+                <div class="icons">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+            </div>
+            <div class="content">
+                <p id="red">Lorem ipsum dolor sit amet consectetur </p>
+                <h3>Lorem ipsum</h3>
+                <p id="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, blanditiis fuga. Asperiores voluptate maiores architecto, </p>
+                <hr>
+                <div class="icons">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+            </div>
+            <div class="content">
+                <p id="red">Lorem ipsum dolor sit amet consectetur </p>
+                <h3>Lorem ipsum</h3>
+                <p id="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, blanditiis fuga. Asperiores voluptate maiores architecto, </p>
+                <hr>
+                <div class="icons">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+            </div>
+            <div class="content">
+                <p id="red">Lorem ipsum dolor sit amet consectetur </p>
+                <h3>Lorem ipsum</h3>
+                <p id="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, blanditiis fuga. Asperiores voluptate maiores architecto, </p>
+                <hr>
+                <div class="icons">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+            </div>
+            <div class="content">
+                <p id="red">Lorem ipsum dolor sit amet consectetur </p>
+                <h3>Lorem ipsum</h3>
+                <p id="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, blanditiis fuga. Asperiores voluptate maiores architecto, </p>
+                <hr>
+                <div class="icons">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    <img src="itachi.jpg" alt="" width="20px">
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+
+    <div class="footer">
+        <div class="blocks">
+            <p>deck.</p>
+        </div>
+        <div class="blocks">
+            <p>links</p>
+        </div>
+        <div class="blocks">
+            <p>links</p>
+        </div>
+        <div class="blocks">
+            <p>links</p>
+        </div>
+        <div class="blocks">
+            <p>links</p>
+        </div>
+        <div class="blocks">
+            <p>links</p>
+        </div>
+        <div id="search">
+            <div id="box"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
